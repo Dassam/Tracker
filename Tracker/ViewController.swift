@@ -11,6 +11,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var star = "Day One"
         // Do any additional setup after loading the view.
     }
 
