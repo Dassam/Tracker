@@ -8,18 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		CE27B0152AF1B97C00E16C63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE27B0142AF1B97C00E16C63 /* AppDelegate.swift */; };
-		CE27B0192AF1B97C00E16C63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE27B0182AF1B97C00E16C63 /* ViewController.swift */; };
+		CE27B0192AF1B97C00E16C63 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE27B0182AF1B97C00E16C63 /* TabBarController.swift */; };
 		CE27B01E2AF1B97E00E16C63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE27B01D2AF1B97E00E16C63 /* Assets.xcassets */; };
 		CE27B0212AF1B97E00E16C63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE27B01F2AF1B97E00E16C63 /* LaunchScreen.storyboard */; };
+		CE27B02A2AF308CC00E16C63 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE27B0292AF308CC00E16C63 /* UIColor+Extensions.swift */; };
+		CEC0C59A2AF6DA1100514F7D /* TrackersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0C5992AF6DA1100514F7D /* TrackersListViewController.swift */; };
+		CEC0C59C2AF6DA2800514F7D /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0C59B2AF6DA2800514F7D /* NavigationViewController.swift */; };
+		CEC0C59E2AF6DA3D00514F7D /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC0C59D2AF6DA3D00514F7D /* StatisticsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE27B0112AF1B97C00E16C63 /* Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE27B0142AF1B97C00E16C63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE27B0182AF1B97C00E16C63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE27B0182AF1B97C00E16C63 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		CE27B01D2AF1B97E00E16C63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE27B0202AF1B97E00E16C63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE27B0222AF1B97E00E16C63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE27B0292AF308CC00E16C63 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		CEC0C5992AF6DA1100514F7D /* TrackersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackersListViewController.swift; sourceTree = "<group>"; };
+		CEC0C59B2AF6DA2800514F7D /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		CEC0C59D2AF6DA3D00514F7D /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +60,73 @@
 		CE27B0132AF1B97C00E16C63 /* Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				CEC0C5932AF5B6F400514F7D /* Enum */,
+				CE27B0282AF308AA00E16C63 /* Extensions */,
+				CEC0C5942AF5B70300514F7D /* Models */,
+				CEC0C5952AF5B77700514F7D /* Presentation */,
+				CEC0C5962AF5B79900514F7D /* Resources */,
+				CEC0C5982AF5B7EA00514F7D /* Service */,
 				CE27B0142AF1B97C00E16C63 /* AppDelegate.swift */,
-				CE27B0182AF1B97C00E16C63 /* ViewController.swift */,
-				CE27B01D2AF1B97E00E16C63 /* Assets.xcassets */,
-				CE27B01F2AF1B97E00E16C63 /* LaunchScreen.storyboard */,
 				CE27B0222AF1B97E00E16C63 /* Info.plist */,
 			);
 			path = Tracker;
+			sourceTree = "<group>";
+		};
+		CE27B0282AF308AA00E16C63 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE27B0292AF308CC00E16C63 /* UIColor+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CEC0C5932AF5B6F400514F7D /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		CEC0C5942AF5B70300514F7D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CEC0C5952AF5B77700514F7D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CE27B0182AF1B97C00E16C63 /* TabBarController.swift */,
+				CEC0C5992AF6DA1100514F7D /* TrackersListViewController.swift */,
+				CEC0C59B2AF6DA2800514F7D /* NavigationViewController.swift */,
+				CEC0C59D2AF6DA3D00514F7D /* StatisticsViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CEC0C5962AF5B79900514F7D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE27B01D2AF1B97E00E16C63 /* Assets.xcassets */,
+				CE27B01F2AF1B97E00E16C63 /* LaunchScreen.storyboard */,
+				CEC0C5972AF5B7BF00514F7D /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CEC0C5972AF5B7BF00514F7D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CEC0C5982AF5B7EA00514F7D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,7 +199,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE27B0192AF1B97C00E16C63 /* ViewController.swift in Sources */,
+				CE27B0192AF1B97C00E16C63 /* TabBarController.swift in Sources */,
+				CE27B02A2AF308CC00E16C63 /* UIColor+Extensions.swift in Sources */,
+				CEC0C59A2AF6DA1100514F7D /* TrackersListViewController.swift in Sources */,
+				CEC0C59E2AF6DA3D00514F7D /* StatisticsViewController.swift in Sources */,
+				CEC0C59C2AF6DA2800514F7D /* NavigationViewController.swift in Sources */,
 				CE27B0152AF1B97C00E16C63 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
